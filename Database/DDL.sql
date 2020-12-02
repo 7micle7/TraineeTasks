@@ -35,8 +35,8 @@ INSERT INTO [dbo].[Categories](CategoryName, Description)
 VALUES ('Beverages', 'Soft drinks, coffees, teas, beers, and ales'),
 	   ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),
 	   ('Confections', 'Desserts, candies, and sweet breads'),
-       ('Dairy Products', 'Cheeses'),
-       ('Grains/Cereals', 'Breads, crackers, pasta, and cereal');
+	   ('Dairy Products', 'Cheeses'),
+	   ('Grains/Cereals', 'Breads, crackers, pasta, and cereal');
 
 --Populate Products
 INSERT INTO [dbo].[Products](ProductName, SupplierID, CategoryID, Price)
