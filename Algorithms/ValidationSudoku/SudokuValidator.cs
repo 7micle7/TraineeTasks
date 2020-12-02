@@ -45,10 +45,11 @@ namespace Sudoku
         private static void CheckSubsquares(int[,] arr)
         {
             var uniqueCollection = new List<int>();
-            for (int row = 0; row < arr.GetLength(0); row = row + 3)
-                for (int col = 0; col < arr.GetLength(1); col = col + 3)
-                    for (int i = row; i < row + 3; i++)
-                        for (int j = col; j < col + 3; j++)
+            int step = (int)Math.Sqrt(arr.GetLength(0));
+            for (int row = 0; row < arr.GetLength(0); row = row + step)
+                for (int col = 0; col < arr.GetLength(1); col = col + step)
+                    for (int i = row; i < row + step; i++)
+                        for (int j = col; j < col + step; j++)
                         {
                             var item = arr[j, i];
                             if (uniqueCollection.Contains(item))
