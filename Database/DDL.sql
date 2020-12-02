@@ -32,19 +32,11 @@ VALUES ('Exotic Liquid', 'London', 'UK'),
 
 --Populate Categories
 INSERT INTO [dbo].[Categories](CategoryName, Description)
-VALUES ('Beverages', 'Soft drinks, coffees, teas, beers, and ales');
-
-INSERT INTO [dbo].[Categories](CategoryName, Description)
-VALUES ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings');
-
-INSERT INTO [dbo].[Categories](CategoryName, Description)
-VALUES ('Confections', 'Desserts, candies, and sweet breads');
-
-INSERT INTO [dbo].[Categories](CategoryName, Description)
-VALUES ('Dairy Products', 'Cheeses');
-
-INSERT INTO [dbo].[Categories](CategoryName, Description)
-VALUES ('Grains/Cereals', 'Breads, crackers, pasta, and cereal');
+VALUES ('Beverages', 'Soft drinks, coffees, teas, beers, and ales'),
+	   ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),
+	   ('Confections', 'Desserts, candies, and sweet breads'),
+       ('Dairy Products', 'Cheeses'),
+       ('Grains/Cereals', 'Breads, crackers, pasta, and cereal');
 
 --Populate Products
 INSERT INTO [dbo].[Products](ProductName, SupplierID, CategoryID, Price)
