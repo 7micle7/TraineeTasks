@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WhoIsOnline
+namespace OOP.WhoIsOnline
 {
     public class User
     {
